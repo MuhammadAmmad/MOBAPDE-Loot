@@ -13,7 +13,7 @@ public class AchievementList extends Fragment{
     RecyclerView rvAchievements;
     AchievementCursorAdapter achievementAdapter;
     AchievementCursorAdapter swapAdapter;
-    DatabaseOpenHelper dbHelper;;
+    DatabaseOpenHelper dbHelper;
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.achievement_list, container, false);
         dbHelper = new DatabaseOpenHelper(v.getContext());

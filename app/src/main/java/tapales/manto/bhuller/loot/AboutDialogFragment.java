@@ -11,8 +11,7 @@ public class AboutDialogFragment extends DialogFragment{
     View v;
     public Dialog onCreateDialog(Bundle savedInstanceState){
         v = LayoutInflater.from(getActivity()).inflate(R.layout.dialog_about, null);
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity())
-                .setView(v);
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity()).setView(v);
         Dialog d = dialogBuilder.create();
         return d;
     }
